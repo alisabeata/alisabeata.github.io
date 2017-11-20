@@ -16,17 +16,6 @@ export default class List extends Component {
     });
   }
   
-//  componentWillReceiveProps(nextProps) {
-//    console.log('componentWillReceiveProps');
-//    console.log(nextProps);
-//  }
-//  
-//  shouldComponentUpdate(nextProps, nextState) {
-//    console.log('shouldComponentUpdate');
-//    console.log(nextProps, nextState);
-//    return true;
-//  }
-  
   render() {
     const {articles} = this.props;
     
