@@ -2,20 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Test</title>
+  <title>alisabeata.github.io</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=800,initial-scale=1,maximum-scale=1">
-  <link href="fonts/fonts.css" rel="stylesheet">
-  <link href="build/common.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <style>
+    body {
+      background: #666;
+      color: #ccc;
+      font-family: monospace;
+      box-sizing: border-box;
+    }
+    
+    a {
+      color: inherit;
+    }
+    
+    a:hover {
+      text-decoration: none;
+    }
+    
+    .page {
+      max-width: 300px;
+      padding: 100px 20px;
+      margin: auto;
+    }
+    
+    .title {
+      margin: 0 0 15px;
+    }
+    
+    .list {
+      list-style: none;
+      padding: 0 0 0 30px;
+      margin-bottom: 40px;
+    }
+    
+    .list__item {
+      margin-bottom: 10px;
+    }
+    
+  </style>
 </head>
 <body>
   <div class="page">
    
-    <p class="title">Expertise</p>
-    <div class="container"></div>
+    <p class="title">React</p>
+    <ul class="list">
+        <li class="list__item"><a href="react/test-react-articles/index.html">1. test react articles</a></li>
+    </ul>
+    
+    <p class="title">WebGL / Three.js</p>
+    <ul class="list">
+        <li class="list__item"><a href="webgl/skull/index.html">1. Skull</a></li>
+        <li class="list__item"><a href="webgl/scene/index.html">2. Scene</a></li>
+    </ul>
     
   </div>
-  <script src="build/common.min.js"></script>
 </body>
 </html>
