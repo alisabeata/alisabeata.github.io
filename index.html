@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>alisabeata.github.io</title>
+  <title>alisabeata.github.io | Alisa Vasilenko</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
   <style>
     body {
-      background: #666;
-      color: #ccc;
-      font-family: monospace;
+      background: white;
+      color: #24292e;
+      font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
       box-sizing: border-box;
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
     }
     
     a {
@@ -23,41 +26,86 @@
     }
     
     .page {
-      max-width: 300px;
-      padding: 100px 20px;
-      margin: auto;
+      padding: 40px;
+      margin: .5em;
+      border: 1px solid #eaecef;
+      border-radius: 2px;
     }
     
     .title {
-      margin: 0 0 15px;
+      font-size: 2em;
+      font-weight: bold;
+      border-bottom: 1px solid #eaecef;
+      padding: 0 0 .3em;
+      margin: 0 0 16px;
     }
     
     .list {
       list-style: none;
-      padding: 0 0 0 30px;
-      margin-bottom: 40px;
+      padding: 0 0 1em;
     }
     
     .list__item {
       margin-bottom: 10px;
     }
     
+    .list__link {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    
+    .links {
+      margin-bottom: 10px;
+    }
+    
+    .links__item {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+    }
+    
+    .links__item img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .footer {
+      text-align: center;
+    }
+    
+    .footer__text {
+      color: #d4d7dc;
+      margin: 0;
+      font-size: 11px;
+    }
+    
   </style>
 </head>
 <body>
   <div class="page">
-   
-    <p class="title">React</p>
+    <div class="links">
+      <a href="https://github.com/alisabeata" class="links__item" target="_blank">
+        <img src="svg/github-icon.svg" alt="github">
+      </a>
+      <a href="https://t.me/alisabeata" class="links__item" target="_blank">
+        <img src="svg/telegram-icon.svg" alt="telegram">
+      </a>
+    </div>
+    
+    <p class="title">My works</p>
     <ul class="list">
-        <li class="list__item"><a href="react/test-react-articles/index.html">1. test react articles</a></li>
+        <li class="list__item"><a href="react/test-react-articles/index.html" class="list__link">Lite clone trello (native js)</a></li>
     </ul>
     
-    <p class="title">WebGL / Three.js</p>
     <ul class="list">
-        <li class="list__item"><a href="webgl/skull/index.html">1. Skull</a></li>
-        <li class="list__item"><a href="webgl/scene/index.html">2. Scene</a></li>
+        <li class="list__item"><a href="webgl/skull/index.html" class="list__link">Skull with WebGL</a></li>
+        <li class="list__item"><a href="webgl/scene/index.html" class="list__link">Easy scene with WebGL</a></li>
     </ul>
-    
+  </div>
+  <div class="footer">
+    <p class="footer__text">Alisa Vasilenko</p>
   </div>
 </body>
 </html>
