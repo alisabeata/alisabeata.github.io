@@ -12,20 +12,20 @@ var sceneApp = (function () {
     function init() {
       container = document.createElement('div');
       container.className = 'main-scene';
-      document.getElementsByClassName('page')[0].appendChild( container );
+      document.getElementsByClassName('page')[0].appendChild(container);
       camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 2000);
       camera.position.z = 4;
 
       // scene
       scene = new THREE.Scene();
 
-      var ambient = new THREE.AmbientLight( 0x444444 );
+      var ambient = new THREE.AmbientLight(0x444444);
       scene.add(ambient);
 
-      var directionalLight = new THREE.DirectionalLight( 0xffeedd );
+      var directionalLight = new THREE.DirectionalLight(0xffeedd);
       directionalLight.position.set(0, 0, 1).normalize();
 
-      scene.add( directionalLight );
+      scene.add(directionalLight);
 
       // Clara.io JSON loader code
       var objectLoader = new THREE.ObjectLoader();
@@ -41,6 +41,8 @@ var sceneApp = (function () {
       document.addEventListener('mousemove', onDocumentMouseMove, false);
 
       window.addEventListener('resize', onWindowResize, false);
+      
+      window.scene = scene;
     }
 
     function onWindowResize() {
@@ -67,8 +69,6 @@ var sceneApp = (function () {
       camera.lookAt(scene.position);
       renderer.render(scene, camera);
     }
-    
-    window.scene = scene;
   }
 
 
