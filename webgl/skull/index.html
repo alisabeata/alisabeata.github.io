@@ -11,6 +11,17 @@
     <link href="favicon.ico" rel="shortcut icon">
     <link href="css/base.css" rel="stylesheet">
     <style>
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+                display: none;
+            }
+        }
+
         body {
             background: black;
             color: #707070;
@@ -26,11 +37,7 @@
             top: 2rem;
             left: 2rem;
             z-index: 11;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            width: 8rem;
+            animation: fadeOut 0.5s 10s forwards;
         }
 
         .mouse {
@@ -38,26 +45,27 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 40px;
-            height: 40px;
+            width: 36px;
+            height: 48px;
             border: 0.2rem solid #707070;
-            border-radius: 1rem;
+            border-radius: 18px;
         }
 
         .mouse:after {
-            content: '';
+            content: 'use mouse or touchpad';
             position: absolute;
+            left: 2.5rem;
+            white-space: nowrap;
+            font-size: 1rem;
+            line-height: 1;
         }
 
         .mouse_inner {
             position: absolute;
+            top: 4px;
+            height: 10px;
             width: 0.2rem;
             background: #707070;
-        }
-
-        .moumouse_inner:after {
-            content: '';
-            position: absolute;
         }
     </style>
 </head>
