@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <!-- 2013 -->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
@@ -9,9 +10,64 @@
     <title>WebGL</title>
     <link href="favicon.ico" rel="shortcut icon">
     <link href="css/base.css" rel="stylesheet">
+    <style>
+        body {
+            background: black;
+            color: #707070;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+            box-sizing: border-box;
+            font-size: 16px;
+            margin: 0;
+            padding: 0
+        }
+
+        .legend {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            z-index: 11;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 8rem;
+        }
+
+        .mouse {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border: 0.2rem solid #707070;
+            border-radius: 1rem;
+        }
+
+        .mouse:after {
+            content: '';
+            position: absolute;
+        }
+
+        .mouse_inner {
+            position: absolute;
+            width: 0.2rem;
+            background: #707070;
+        }
+
+        .moumouse_inner:after {
+            content: '';
+            position: absolute;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="legend">
+        <div class="mouse">
+            <div class="mouse_inner"></div>
+        </div>
+    </div>
     <div class="page"></div>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/three.js/three.min.js"></script>

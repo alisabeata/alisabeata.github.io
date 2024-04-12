@@ -29,10 +29,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-wrap: wrap;
+            width: 8rem;
         }
 
         .arrows {
             position: relative;
+            width: 8rem;
+            height: 8rem;
             margin-bottom: 2rem;
         }
 
@@ -43,24 +47,39 @@
             justify-content: center;
             width: 40px;
             height: 40px;
-            border: 0.25rem solid #707070;
+            border: 0.2rem solid #707070;
             border-radius: 1rem;
             background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPgo8c3ZnIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBvbHlnb24gZmlsbD0iIzcwNzA3MCIgcG9pbnRzPSIzOTAuNjI0IDE1MC42MjUgMjU2IDE2IDEyMS4zNzYgMTUwLjYyNSAxNDQuMDA0IDE3My4yNTIgMjQwLjAwMSA3Ny4yNTQgMjQwLjAwMSA0OTUuMjM2IDI3Mi4wMDEgNDk1LjIzNiAyNzIuMDAxIDc3LjI1NyAzNjcuOTk2IDE3My4yNTIgMzkwLjYyNCAxNTAuNjI1IiBjbGFzcz0iY2ktcHJpbWFyeSIvPgo8L3N2Zz4=");
-            background-position: center;
+            background-position: center 9px;
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: 44px;
         }
 
-        .arrow_top {}
+        .arrow_top {
+            left: 2.5rem;
+        }
 
-        .arrow_left {}
+        .arrow_left {
+            top: 2.5rem;
+            transform: rotate(-90deg);
+        }
 
-        .arrow_right {}
+        .arrow_right {
+            left: 5rem;
+            top: 2.5rem;
+            transform: rotate(90deg);
+        }
 
-        .arrow_bottom {}
+        .arrow_bottom {
+            left: 2.5rem;
+            top: 5rem;
+            transform: rotate(180deg);
+        }
 
         .keyboard {
             position: relative;
+            width: 8rem;
+            height: 8rem;
         }
 
         .key {
@@ -70,17 +89,29 @@
             justify-content: center;
             width: 40px;
             height: 40px;
-            border: 0.25rem solid #707070;
+            border: 0.2rem solid #707070;
             border-radius: 1rem;
+            font-weight: bold;
+            font-size: 20px;
         }
 
-        .key_top {}
+        .key_top {
+            left: 2.5rem;
+        }
 
-        .key_left {}
+        .key_left {
+            top: 2.5rem;
+        }
 
-        .key_right {}
+        .key_right {
+            left: 5rem;
+            top: 2.5rem;
+        }
 
-        .key_bottom {}
+        .key_bottom {
+            left: 2.5rem;
+            top: 5rem;
+        }
     </style>
 </head>
 
