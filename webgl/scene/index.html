@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<!-- 2013 -->
 
 <head>
     <meta charset="utf-8">
@@ -9,14 +10,102 @@
     <title>WebGL</title>
     <link href="favicon.ico" rel="shortcut icon">
     <link href="css/base.css" rel="stylesheet">
+    <style>
+        body {
+            background: black;
+            color: #707070;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+            box-sizing: border-box;
+            font-size: 16px;
+            margin: 0;
+            padding: 0
+        }
+
+        .legend {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            z-index: 11;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .arrows {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .arrow {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border: 0.25rem solid #707070;
+            border-radius: 1rem;
+            background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPgo8c3ZnIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBvbHlnb24gZmlsbD0iIzcwNzA3MCIgcG9pbnRzPSIzOTAuNjI0IDE1MC42MjUgMjU2IDE2IDEyMS4zNzYgMTUwLjYyNSAxNDQuMDA0IDE3My4yNTIgMjQwLjAwMSA3Ny4yNTQgMjQwLjAwMSA0OTUuMjM2IDI3Mi4wMDEgNDk1LjIzNiAyNzIuMDAxIDc3LjI1NyAzNjcuOTk2IDE3My4yNTIgMzkwLjYyNCAxNTAuNjI1IiBjbGFzcz0iY2ktcHJpbWFyeSIvPgo8L3N2Zz4=");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .arrow_top {}
+
+        .arrow_left {}
+
+        .arrow_right {}
+
+        .arrow_bottom {}
+
+        .keyboard {
+            position: relative;
+        }
+
+        .key {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border: 0.25rem solid #707070;
+            border-radius: 1rem;
+        }
+
+        .key_top {}
+
+        .key_left {}
+
+        .key_right {}
+
+        .key_bottom {}
+    </style>
 </head>
 
+
 <body>
+    <div class="legend">
+        <div class="arrows">
+            <div class="arrow arrow_top"></div>
+            <div class="arrow arrow_left"></div>
+            <div class="arrow arrow_right"></div>
+            <div class="arrow arrow_bottom"></div>
+        </div>
+        <div class="keyboard">
+            <div class="key key_top">W</div>
+            <div class="key key_left">A</div>
+            <div class="key key_right">D</div>
+            <div class="key key_bottom">S</div>
+        </div>
+    </div>
+
     <div class="page"></div>
-    
+
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/three.js/three.min.js"></script>
-    
+
     <script src="js/scene1__scene.js"></script>
 </body>
 
